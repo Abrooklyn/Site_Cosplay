@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <a href="#" class="btn btn-submit">Follow us</a>
+          <a href="https://www.facebook.com/CdDeadpool" class="btn btn-submit">Follow us</a>
         </div>
       </div>
     </div>
@@ -147,6 +147,28 @@
             <h2 class="head-title">Gallery</h2>
             <hr class="botm-line">
             <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+          </div>
+          <div class="title" id="photos"><h3>Photos</h3></div>
+          <div class="photos">
+              <div class="slideshow">
+                  <ul>
+                      <li><img src="img/img_1.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_2.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_3.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_4.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_5.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_6.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_7.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_8.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_9.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_10.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_11.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_12.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_13.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_14.jpg" alt="" width="200" height="200" /></li>
+                      <li><img src="img/img_15.jpg" alt="" width="200" height="200" /></li>
+                  </ul>
+              </div>
           </div>
         </div>
         <div class="col-md-9 col-sm-12">
@@ -232,11 +254,6 @@
               <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span><a href="" class="link-dec">Via Youtube </a></p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="contact-icon-container hidden-md hidden-sm hidden-xs">
-              <span aria-hidden="true" class="fa fa-envelope-o"></span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -268,6 +285,16 @@
   <script src="js/wow.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
-
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ 
+<script type="text/javascript">
+   $(function(){
+      setInterval(function(){
+         $(".slideshow ul").animate({marginLeft:-200},200,function(){
+            $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+         })
+      }, 2000);
+   });
+</script>
 </body>
 </html>
