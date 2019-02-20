@@ -385,3 +385,7 @@ a, a:hover {
 .slideshow li {
   float: left;
 }
+
+.logo {
+  text-align: center;
+}
